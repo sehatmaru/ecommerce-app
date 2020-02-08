@@ -1,4 +1,8 @@
 <resources>
     <string name="something_went_wrong">Something went wrong at our end</string>
     <string name="retry">RETRY</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
