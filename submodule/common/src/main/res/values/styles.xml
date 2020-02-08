@@ -1,0 +1,8 @@
+<resources>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/color9b9b9b</item>
+        <item name="android:textSize">10sp</item>
+        <item name="colorControlNormal">@color/color9b9b9b</item>
+        <item name="colorControlActivated">@color/color9b9b9b</item>
+    </style>
+</resources>

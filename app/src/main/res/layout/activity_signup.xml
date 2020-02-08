@@ -6,9 +6,8 @@
     android:orientation="vertical"
     android:background="@color/colorf9f9f9"
     android:paddingStart="14dp"
-    android:paddingEnd="14dp">
-
-    <include layout="@layout/toolbar"/>
+    android:paddingEnd="14dp"
+    android:paddingTop="80dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +16,7 @@
         android:textStyle="bold"
         android:textColor="@color/color222222"
         android:fontFamily="@font/metropolis_bold"
-        android:text="Login" />
+        android:text="Sign up" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,6 +24,14 @@
         android:orientation="vertical"
         android:gravity="center"
         android:paddingTop="73dp">
+
+        <com.app.uicustom.view.InputDataWithLabelViewKG
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintInputGeneral="@string/name"
+            android:layout_marginBottom="8dp"
+            app:formatTypeGeneral="text"/>
 
         <com.app.uicustom.view.InputDataWithLabelViewKG
             android:id="@+id/email"
@@ -49,18 +56,18 @@
             android:gravity="end">
 
             <TextView
-                android:id="@+id/tvForgot"
+                android:id="@+id/tvLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:textSize="14sp"
                 android:textColor="@color/color222222"
                 android:lineSpacingExtra="6sp"
                 android:fontFamily="@font/metropolis_regular"
-                android:text="Forgot your password?"
+                android:text="Already have an account?"
                 android:gravity="center_vertical"/>
-
+            
             <ImageView
-                android:id="@+id/iconForgot"
+                android:id="@+id/iconLogin"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:paddingLeft="4dp"
@@ -81,7 +88,7 @@
                 android:textSize="14sp"
                 android:fontFamily="@font/metropolis_regular"
                 android:textColor="@color/colorffffff"
-                android:text="LOGIN"
+                android:text="SIGN UP"
                 android:lineSpacingExtra="6sp"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"
@@ -110,7 +117,7 @@
             android:textColor="@color/color222222"
             android:lineSpacingExtra="6sp"
             android:fontFamily="@font/metropolis_regular"
-            android:text="Or login with social account"
+            android:text="Or sign up with social account"
             android:textAlignment="center"/>
 
         <LinearLayout
