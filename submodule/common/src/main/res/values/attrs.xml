@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingKG">
+        <attr name="anim" format="boolean" />
+        <attr name="messageFailed" format="string" />
+        <attr name="statusLoading" format="enum">
+            <enum name="loading" value="0" />
+            <enum name="failed" value="1" />
+            <enum name="dismiss" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RecycleLoadingKG">
+        <attr name="statusRecycle" format="enum">
+            <enum name="loading" value="0" />
+            <enum name="failed" value="1" />
+            <enum name="success" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,4 @@
+include ':app', ':common',':uicustom', ':network'
+project(':common').projectDir = new File('submodule/common')
+project(':uicustom').projectDir = new File('submodule/uicustom')
+project(':network').projectDir = new File('submodule/network')

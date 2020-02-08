@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.supportAppCompat
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(':common')
+    implementation deps.kotlinJre
+    //dagger
+    implementation deps.dagger
+    kapt deps.daggerCompiler
+    implementation deps.daggerAndroid
+    implementation deps.daggerAndroidSupport
+    kapt deps.daggerProcessor
+
+    // logan square json converter
+    kapt deps.logansquareCompiler
+    implementation deps.logansquare
+    implementation deps.logansquareConverter
+
+    // retrofit
+    implementation deps.retrofit
+    implementation deps.retrofitRxJava
+    implementation deps.retrofitRxJava2
+    implementation deps.okHttp
+    implementation deps.okHttpLoging
+
+    // RX java
+    implementation deps.rxAndroid
+    implementation deps.rxJava
+
+    // RX java 2
+    implementation deps.rxJava2
+    implementation deps.rxJava2Android
+}

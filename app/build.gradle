@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "id.nakruma.eccomerce"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.15.0'
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation deps.supportAppCompat
+    implementation deps.constraintLayout
+    implementation deps.kotlinJre
+    implementation deps.supportDesign
+    // Butterknife
+    implementation deps.butterKnife
+    kapt deps.butterKnifeCompiler
+
+    implementation deps.multiDex
+    implementation deps.eventbus
+
+    implementation deps.playService
+
+    implementation project(':common')
+    implementation project(':uicustom')
+    implementation project(':network')
+
+    //dagger
+    implementation deps.dagger
+    kapt deps.daggerCompiler
+    implementation deps.daggerAndroid
+    implementation deps.daggerAndroidSupport
+    kapt deps.daggerProcessor
+
+    // logan square json converter
+    kapt deps.logansquareCompiler
+    implementation deps.logansquare
+    implementation deps.logansquareConverter
+
+    // retrofit
+    implementation deps.retrofit
+    implementation deps.retrofitRxJava
+    implementation deps.retrofitRxJava2
+    implementation deps.okHttp
+    implementation deps.okHttpLoging
+
+    // RX java
+    implementation deps.rxAndroid
+    implementation deps.rxJava
+
+    // RX java 2
+    implementation deps.rxJava2
+    implementation deps.rxJava2Android
+}

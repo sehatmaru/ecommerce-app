@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Nakruma Ecommerce</string>
+
+    <string name="something_went_wrong">Something went wrong at our end</string>
+    <string name="retry">RETRY</string>
+
+    <string name="digrees" translatable="false">%s\u00B0</string>
+    <string name="digreesCelcius" translatable="false">%s&#160;C</string>
+
+</resources>

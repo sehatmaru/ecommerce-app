@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/modules.xml
+/.idea/caches
+.idea
+/app/app.iml
+.DS_Store
+/build
+/app/build
+/captures
+officer-app.iml
+/submodule/common/common.iml
+/submodule/network/network.iml
+/submodule/uicustom/uicustom.iml
