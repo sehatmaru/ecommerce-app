@@ -21,4 +21,13 @@
         <attr name="titleProfile" format="reference"/>
         <attr name="hintProfile" format="reference"/>
     </declare-styleable>
+
+    <declare-styleable name="ListCategoryShopViewKG">
+        <attr name="categoryShop" format="enum">
+            <enum name="news" value="0"/>
+            <enum name="clothes" value="1"/>
+            <enum name="shoes" value="2"/>
+            <enum name="accesories" value="3"/>
+        </attr>
+    </declare-styleable>
 </resources>

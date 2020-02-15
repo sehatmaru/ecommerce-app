@@ -1,11 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@color/colorf9f9f9">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Shop"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:paddingTop="28dp"
+                android:paddingBottom="23dp"
+                android:background="@drawable/bg_rad8_colordb3022">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorffffff"
+                    android:text="SUMMER SALES"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_medium"
+                    android:textColor="@color/colorffffff"
+                    android:text="Up to 50% off"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <com.app.uicustom.view.ListCategoryShopViewKG
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                app:categoryShop="news"/>
+
+            <com.app.uicustom.view.ListCategoryShopViewKG
+                android:id="@+id/clothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                app:categoryShop="clothes"/>
+
+            <com.app.uicustom.view.ListCategoryShopViewKG
+                android:id="@+id/shoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                app:categoryShop="shoes"/>
+
+            <com.app.uicustom.view.ListCategoryShopViewKG
+                android:id="@+id/accesories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                app:categoryShop="accesories"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
