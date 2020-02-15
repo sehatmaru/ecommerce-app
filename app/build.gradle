@@ -81,4 +81,7 @@ dependencies {
     // RX java 2
     implementation deps.rxJava2
     implementation deps.rxJava2Android
+
+    //Circle Image
+    implementation deps.circleImageView
 }

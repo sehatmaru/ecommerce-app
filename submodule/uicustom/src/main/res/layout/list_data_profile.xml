@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lyt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textSize="16sp"
+            android:textColor="@color/color222222"
+            android:fontFamily="@font/metropolis_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My orders" />
+
+        <TextView
+            android:id="@+id/tvHint"
+            android:textSize="11sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:textColor="@color/color9b9b9b"
+            android:text="Already have 12 orders" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="7dp"
+        android:src="@drawable/chevron_right"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

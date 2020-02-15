@@ -6,14 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.ecommerce.R
+import com.app.ecommerce.activity.profile.settings.SettingsActivity
+import com.app.uicustom.view.ListDataProfileViewKG
 import dagger.android.support.AndroidSupportInjection
+import kotlinx.android.synthetic.main.fragment_profile.*
 import javax.inject.Inject
 
-class ProfileFragment : Fragment(), ProfileFragmentContract.View {
+class ProfileFragment : Fragment(), ProfileFragmentContract.View, ListDataProfileViewKG.ListDataProfileViewKGListener {
 
     @Inject lateinit var presenter: ProfileFragmentPresenter
 
     companion object {
+        const val SETTINGS = "SETTINGS"
 
         @JvmStatic fun newInstance(): ProfileFragment {
             val fragment = ProfileFragment()
@@ -34,10 +38,16 @@ class ProfileFragment : Fragment(), ProfileFragmentContract.View {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initFunction()
+        initListener()
     }
 
-    private fun initFunction() {
+    private fun initListener() {
+        settings.setListDataProfileViewKGListener(this, SETTINGS)
+    }
 
+    override fun getListDataProfileGeneralByTag(TAG: String) {
+        when(TAG){
+            SETTINGS -> startActivity(SettingsActivity.newIntent(requireContext()))
+        }
     }
 }

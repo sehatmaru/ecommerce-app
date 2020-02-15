@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp">
 
     <TextView
+        android:textSize="34sp"
+        android:fontFamily="@font/metropolis_bold"
+        android:textColor="@color/color222222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My profile"
+        android:paddingTop="30dp"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Profile"/>
+        android:orientation="horizontal"
+        android:paddingTop="24dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/profile_pict"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="34dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="@font/metropolis_semibold"
+                android:textColor="@color/color222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matilda Brown" />
+
+            <TextView
+                android:textSize="14sp"
+                android:fontFamily="@font/metropolis_semibold"
+                android:textColor="@color/color9b9b9b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="matildabrown@mail.com" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.app.uicustom.view.ListDataProfileViewKG
+                android:id="@+id/orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleProfile="@string/title_list1"
+                app:hintProfile="@string/hint_list1"
+                android:paddingBottom="36dp"/>
+
+            <com.app.uicustom.view.ListDataProfileViewKG
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleProfile="@string/title_list2"
+                app:hintProfile="@string/hint_list2"
+                android:paddingBottom="36dp"/>
+
+            <com.app.uicustom.view.ListDataProfileViewKG
+                android:id="@+id/payments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleProfile="@string/title_list3"
+                app:hintProfile="@string/hint_list3"
+                android:paddingBottom="36dp"/>
+
+            <com.app.uicustom.view.ListDataProfileViewKG
+                android:id="@+id/promos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleProfile="@string/title_list4"
+                app:hintProfile="@string/hint_list4"
+                android:paddingBottom="36dp"/>
+
+            <com.app.uicustom.view.ListDataProfileViewKG
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleProfile="@string/title_list5"
+                app:hintProfile="@string/hint_list5"
+                android:paddingBottom="36dp"/>
+
+            <com.app.uicustom.view.ListDataProfileViewKG
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleProfile="@string/title_list6"
+                app:hintProfile="@string/hint_list6"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

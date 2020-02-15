@@ -25,6 +25,7 @@ ext {
     retrofit_version = '2.0.2'
     okhttp_version = '3.5.0'
     play_service_version = '11.4.0'
+    circleimageview_version = '2.1.0'
 
     deps = [
 
@@ -57,7 +58,8 @@ ext {
             retrofitRxJava2: "com.squareup.retrofit2:adapter-rxjava2:2.2.0",
             okHttp: "com.squareup.okhttp3:okhttp:$okhttp_version",
             okHttpLoging:   "com.squareup.okhttp3:logging-interceptor:$okhttp_version",
-            playService:   "com.google.android.gms:play-services:$play_service_version"
+            playService:   "com.google.android.gms:play-services:$play_service_version",
+            circleImageView: "de.hdodenhof:circleimageview:$circleimageview_version"
 
     ]
 

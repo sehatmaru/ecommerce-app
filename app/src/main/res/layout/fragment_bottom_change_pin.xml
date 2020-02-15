@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="6dp"
+            android:background="@drawable/bg_rad3_color9b9b9b"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:textColor="@color/color222222"
+            android:paddingTop="16dp"
+            android:text="Password Change"/>
+
+        <com.app.uicustom.view.InputDataWithLabelViewKG
+            android:id="@+id/oldPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintInputGeneral="@string/old_pin"
+            app:formatTypeGeneral="email"
+            android:layout_marginTop="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:id="@+id/forgotPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Forgot Password?"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:fontFamily="@font/metropolis_medium"/>
+
+        </LinearLayout>
+
+        <com.app.uicustom.view.InputDataWithLabelViewKG
+            android:id="@+id/newPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintInputGeneral="@string/new_pin"
+            android:layout_marginTop="18dp"/>
+
+        <com.app.uicustom.view.InputDataWithLabelViewKG
+            android:id="@+id/repeatPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintInputGeneral="@string/repeat_pin"
+            app:formatTypeGeneral="email"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:paddingTop="32dp"
+            android:paddingBottom="34dp">
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/metropolis_regular"
+                android:textColor="@color/colorffffff"
+                android:text="SAVE PIN"
+                android:lineSpacingExtra="6sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:textAlignment="center"
+                android:background="@drawable/bg_rad25_colordb3022"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

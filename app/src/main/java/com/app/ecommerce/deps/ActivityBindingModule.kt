@@ -6,6 +6,8 @@ import com.app.ecommerce.activity.login.LoginActivity
 import com.app.ecommerce.activity.login.LoginModule
 import com.app.ecommerce.activity.main.MainActivity
 import com.app.ecommerce.activity.main.MainModule
+import com.app.ecommerce.activity.profile.settings.SettingsActivity
+import com.app.ecommerce.activity.profile.settings.SettingsActivityModule
 import com.app.ecommerce.activity.signup.SignupActivity
 import com.app.ecommerce.activity.signup.SignupActivityModule
 import dagger.Module
@@ -30,4 +32,8 @@ abstract class ActivityBindingModule {
     @ActivityScoped
     @ContributesAndroidInjector(modules = [ForgotPasswordActivityModule::class])
     internal abstract fun forgotPasswordActivity(): ForgotPasswordActivity
+
+    @ActivityScoped
+    @ContributesAndroidInjector(modules = [SettingsActivityModule::class])
+    internal abstract fun settingsActivity(): SettingsActivity
 }

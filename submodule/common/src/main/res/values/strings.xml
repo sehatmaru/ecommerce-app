@@ -10,5 +10,24 @@
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="pin">Pin</string>
+    
+    <string name="title_list1">My orders</string>
+    <string name="hint_list1">Already have 12 orders</string>
+    <string name="title_list2">Shipping addresses</string>
+    <string name="hint_list2">3 addresses</string>
+    <string name="title_list3">Payment methods</string>
+    <string name="hint_list3">Payment methods</string>
+    <string name="title_list4">Promocodes</string>
+    <string name="hint_list4">You have special promocodes</string>
+    <string name="title_list5">My reviews</string>
+    <string name="hint_list5">Reviews for 4 items</string>
+    <string name="title_list6">Settings</string>
+    <string name="hint_list6">Notifications, password</string>
+
+    <string name="full_name">Full Name</string>
+    <string name="date_birth">Date of Birth</string>
+    <string name="old_pin">Old PIN</string>
+    <string name="new_pin">New PIN</string>
+    <string name="repeat_pin">Repeat New PIN</string>
 
 </resources>

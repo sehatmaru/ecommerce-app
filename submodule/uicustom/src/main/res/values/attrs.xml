@@ -16,4 +16,9 @@
         <attr name="withClear" format="boolean"/>
         <attr name="isPassword" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="ListDataProfileViewKG">
+        <attr name="titleProfile" format="reference"/>
+        <attr name="hintProfile" format="reference"/>
+    </declare-styleable>
 </resources>

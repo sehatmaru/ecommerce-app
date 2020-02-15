@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="148dp"
+        android:layout_height="184dp"
+        android:src="@drawable/big_banner"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/star_activated"
+            android:layout_marginRight="1dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/star_activated"
+            android:layout_marginRight="1dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/star_activated"
+            android:layout_marginRight="1dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/star_activated"
+            android:layout_marginRight="1dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/star_activated"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="@font/metropolis_regular"
+            android:lineSpacingExtra="-2sp"
+            android:text="(10)"
+            android:textColor="@color/color9b9b9b"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/brand"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_regular"
+        android:paddingTop="8dp"
+        android:text="Dorothy Perkins"
+        android:textColor="@color/color9b9b9b"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:textSize="16sp"
+        android:fontFamily="@font/metropolis_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Evening Dress"
+        android:textColor="@color/color222222"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="15$"
+            android:paddingRight="4dp"
+            android:textColor="@color/color9b9b9b"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="12$"
+            android:textColor="@color/colordb3022"/>
+
+    </LinearLayout>
+
+</LinearLayout>

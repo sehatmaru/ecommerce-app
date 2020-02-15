@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorf9f9f9"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/color222222"
+        android:fontFamily="@font/metropolis_bold"
+        android:text="Settings" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/metropolis_semibold"
+        android:textColor="@color/color222222"
+        android:text="Personal Information"
+        android:paddingTop="23dp"
+        android:paddingBottom="21dp"/>
+
+    <com.app.uicustom.view.InputDataWithLabelViewKG
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintInputGeneral="@string/full_name"
+        app:formatTypeGeneral="email"
+        android:layout_marginBottom="8dp"/>
+
+    <com.app.uicustom.view.InputDataWithLabelViewKG
+        android:id="@+id/birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintInputGeneral="@string/date_birth"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="55dp"
+        android:paddingBottom="21dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:textColor="@color/color222222"
+            android:text="PIN"/>
+
+        <TextView
+            android:id="@+id/changePin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/metropolis_medium"
+            android:textColor="@color/color9b9b9b"
+            android:text="Change"/>
+
+    </LinearLayout>
+
+    <com.app.uicustom.view.InputDataWithLabelViewKG
+        android:id="@+id/pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintInputGeneral="@string/pin"
+        app:formatTypeGeneral="email"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="55dp"
+        android:text="Notifications"
+        android:textSize="16sp"
+        android:fontFamily="@font/metropolis_semibold"
+        android:textColor="@color/color222222"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="23dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sales"
+            android:textSize="14sp"
+            android:fontFamily="@font/metropolis_medium"
+            android:textColor="@color/color222222"/>
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="20dp"
+            android:src="@drawable/option_active"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Arrivals"
+            android:textSize="14sp"
+            android:fontFamily="@font/metropolis_medium"
+            android:textColor="@color/color222222"/>
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="20dp"
+            android:src="@drawable/option_inactive"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delivery status changes"
+            android:textSize="14sp"
+            android:fontFamily="@font/metropolis_medium"
+            android:textColor="@color/color222222"/>
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="20dp"
+            android:src="@drawable/option_inactive"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>
