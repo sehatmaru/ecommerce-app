@@ -14,5 +14,6 @@
         <attr name="enableTypeOne" format="boolean"/>
         <attr name="showTitle" format="boolean"/>
         <attr name="withClear" format="boolean"/>
+        <attr name="isPassword" format="boolean"/>
     </declare-styleable>
 </resources>

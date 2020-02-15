@@ -1,6 +1,5 @@
 package com.app.ecommerce.activity.login
 
-import com.app.network.sdk.NetworkSDK
 import dagger.Module
 import dagger.Provides
 
@@ -8,15 +7,13 @@ import dagger.Provides
 class LoginModule {
 
     @Provides
-    internal fun provideMainView(activity: LoginActivity)
-            : LoginContract.View {
+    internal fun provideMainView(activity: LoginActivity): LoginContract.View {
         return activity
     }
 
     @Provides
-    internal fun provideMainPresenter(view: LoginContract.View, networkSDK: NetworkSDK)
-            : LoginPresenter {
-        return LoginPresenter(view, networkSDK)
+    internal fun provideMainPresenter(view: LoginContract.View): LoginPresenter {
+        return LoginPresenter(view)
     }
 
 }

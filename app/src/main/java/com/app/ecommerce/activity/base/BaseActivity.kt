@@ -158,7 +158,7 @@ abstract class BaseActivity : AppCompatActivity() {
         if (supportActionBar != null) {
             supportActionBar!!.title = ""
         }
-        getToolbar()?.setNavigationIcon(R.drawable.icon_back)
+        getToolbar()?.setNavigationIcon(R.drawable.icon_back_active)
         if (getToolbar() != null) {
             val mTitle = getToolbar()!!.findViewById(R.id.toolbar_title) as TextView
             mTitle.text = title

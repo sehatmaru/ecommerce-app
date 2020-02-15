@@ -17,7 +17,7 @@ class InputDataWithLabelViewKG @JvmOverloads constructor(context: Context, attrs
                                                          @AttrRes defStyleAttr: Int = 0) : FrameLayout(context, attrs, defStyleAttr) {
 
     private var TAG = "NONE"
-    private var listener: InputDataTypeOneViewKGListener? = null
+    private var listener: InputDataWithLabelViewKGListener? = null
 
     init {
         LayoutInflater.from(context).inflate(R.layout.input_data_with_title, this)
@@ -46,6 +46,9 @@ class InputDataWithLabelViewKG @JvmOverloads constructor(context: Context, attrs
                         txtInputOne.inputType = InputType.TYPE_CLASS_TEXT
                     }
                 }
+                if (attributeArray.getBoolean(R.styleable.InputDataWithLabelViewKG_isPassword, false)){
+                    txtInputOne.inputType = InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_FLAG_SIGNED or InputType.TYPE_NUMBER_VARIATION_PASSWORD
+                }
                 txtInputOne.isEnabled = attributeArray.getBoolean(R.styleable.InputDataWithLabelViewKG_enableTypeOne, true)
                 attributeArray.recycle()
             } catch (e: Exception) {
@@ -66,7 +69,7 @@ class InputDataWithLabelViewKG @JvmOverloads constructor(context: Context, attrs
         return txtInputOne.text.toString()
     }
 
-    fun setInputDataTypeOneViewKGListener(listener: InputDataTypeOneViewKGListener, TAG: String) {
+    fun setInputDataWithLabelViewKGListener(listener: InputDataWithLabelViewKGListener, TAG: String) {
         this.TAG = TAG
         this.listener = listener
         txtInputOne.addTextChangedListener(object : TextWatcher {
@@ -85,7 +88,7 @@ class InputDataWithLabelViewKG @JvmOverloads constructor(context: Context, attrs
 
     }
 
-    interface InputDataTypeOneViewKGListener {
+    interface InputDataWithLabelViewKGListener {
         fun getInputDataGeneralByTag(value: String, TAG: String)
     }
 }

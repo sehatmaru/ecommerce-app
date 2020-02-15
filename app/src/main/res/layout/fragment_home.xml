@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorf9f9f9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        android:background="@drawable/big_banner">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                android:fontFamily="@font/metropolis_bold"
+                android:textColor="@color/white"
+                android:maxWidth="200dp"
+                android:lines="2"
+                android:text="Fashion sale" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|right"
+                android:paddingTop="18dp">
+
+                <TextView
+                    android:id="@+id/btnCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:textColor="@color/colorffffff"
+                    android:text="Check"
+                    android:lineSpacingExtra="6sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/bg_rad25_colordb3022"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="33dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:fontFamily="@font/metropolis_bold"
+            android:textColor="@color/color222222"
+            android:text="New"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="View all"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|end"
+            android:textColor="@color/color222222"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/metropolis_regular"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="11sp"
+        android:textColor="@color/color9b9b9b"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="You’ve never seen it before!" />
+
+</LinearLayout>
