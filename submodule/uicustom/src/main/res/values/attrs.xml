@@ -30,4 +30,24 @@
             <enum name="accesories" value="3"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="ListItemBagViewKG">
+        <attr name="itemCat" format="enum">
+            <enum name="first" value="0"/>
+            <enum name="second" value="1"/>
+            <enum name="third" value="2"/>
+        </attr>
+        <attr name="itemSize" format="enum">
+            <enum name="s" value="0"/>
+            <enum name="m" value="1"/>
+            <enum name="l" value="2"/>
+            <enum name="xl" value="3"/>
+        </attr>
+        <attr name="itemColor" format="enum">
+            <enum name="black" value="0"/>
+            <enum name="navy" value="1"/>
+            <enum name="red" value="2"/>
+            <enum name="green" value="3"/>
+        </attr>
+    </declare-styleable>
 </resources>
